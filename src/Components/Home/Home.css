@@ -1,0 +1,112 @@
+/* Home Page Styles */
+
+/* Base styles */
+.home {
+  height: 100vh;
+  padding: 20px;
+  text-align: center;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.sort-button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.sort-button:hover {
+  background-color: #0056b3;
+}
+
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding-top: 26px;
+  padding-bottom: 20px;
+}
+
+.movie-block {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.movie-poster {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .search-input {
+    max-width: 100%; /* Allow the search input to take full width on smaller screens */
+  }
+
+  .movie-block {
+    width: calc(
+      50% - 20px
+    ); /* Two movies per row on smaller screens with a bit of gap */
+  }
+}
+
+.releseDate {
+  display: flex;
+  justify-content: space-between; /* Aligns items with space between */
+  align-items: center; /* Centers items vertically */
+}
+
+.left {
+  order: 1;
+}
+.right {
+  order: 2;
+}
+
+/* Genre List Styles */
+.genre-list {
+  margin-top: 20px;
+}
+
+.genre-list h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.genre-list ul {
+  list-style: none;
+  padding: 0;
+  display: flex; /* Display genres in a single line */
+  flex-wrap: wrap; /* Allow wrapping when there isn't enough space */
+}
+
+.genre-list li {
+  margin-right: 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.genre-list li:hover {
+  background-color: #e0e0e0;
+}
